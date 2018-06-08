@@ -1,6 +1,4 @@
-.Global{
-	overflow-y: scroll;
-}
+ 
  #title{
 
 	font-size: 100px;
@@ -18,81 +16,80 @@ a:link{
 }
 
 .Logo{
-	position: fixed;
+	position: relative;
 	 width: 700px;
 	 height: 500px;
 	 top:55%;
 	 left: 50%;
-	 margin-top: -50px;
+	 margin-top: 10%;
 	 margin-left: -400px;
 	 text-align: center;
 }
 
-.HomeButton{
+#HomeButton{
 	border: 4px solid white;
 	padding: 7px;
 	border-radius: 4px;
-	position: fixed;
-	top: 50%;
-	left: 45%;
-	margin-top: -150px;
-	margin-left: -450px;
+	position: absolute; /*Used absolute cause it is like relative but is  doesnt affect neighbors and isnt affected by neighbors */
+	top: 20%;
+	left: 54%;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
+
 }
-.HomeButton:hover{
+#HomeButton:hover{
 	background-color: #ff1a1a;
 	color: white;
 }
-.ResumeButton{
+#ResumeButton{
 	border: 4px solid white;
 	padding: 7px;
 	border-radius: 4px;
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 54%;
 	margin-top: -150px;
-	margin-left: -340px;
+	margin-left: -400px;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
 }
-.ResumeButton:hover{
+#ResumeButton:hover{
 	background-color: #ff1a1a;
 	color:white;
 }
-.AboutMeButton{
+#AboutMeButton{
 	border: 4px solid white;
 	padding: 7px;
 	border-radius: 4px;
-	position: fixed;
+	position: absolute;
 	top: 50%;
-	right: 45%;
+	left: 54%;
 	margin-top: -150px;
-	margin-right: -450px;
+	margin-left: 320px;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
 }
-.AboutMeButton:hover{
+#AboutMeButton:hover{
 	background-color: #ff1a1a;
 	color:white;
 }
-.TutorialsButton{
-	position: fixed;
-	top: 50%;
-	right: 55%;
-	margin-top: -150px;
-	margin-right: -300px;
-	border: 3px solid white;
-	padding: 7px 7px;
-	font-family: Impact;
-	font-size:50px;
-	-webkit-transition-duration: 0.4s;
+#TutorialsButton{
+	border: 4px solid white;
+	padding: 7px;
 	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	margin-top: -150px;
+	margin-left: -470px;
+	-webkit-transition-duration: 0.4s;
+	font-family: Impact;
+	font-size: 50px;
 }
-.TutorialsButton:hover{
+#TutorialsButton:hover{
 	background-color: #ff1a1a;
 	color:white;
 }
@@ -109,13 +106,15 @@ body{
    html{height:100%, width 100%};
 }
 
-.sidebar{
-	background: #eee;
-	height: 100%;
-	width: 30%;
-	position:fixed;
-	top: 50%;
-	left: 30%;
-	padding-top: 20px;
 
+div.sidebar{
+	position:absolute;
+	top:50%;
+	left:30%;
+	height: 10%;
+	width: 10%;
+	padding: 10px;
+	background-color: white;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
 }
