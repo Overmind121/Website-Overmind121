@@ -1,10 +1,13 @@
  
  #title{
-
+ 	position: absolute;
+ 	left: 37%;
+ 	top: 1%;
 	font-size: 100px;
-	color: white;
+	color: #34cb34;
 	font-family: Impact;
-	text-shadow: 3px 3px black;
+	text-shadow: 3px 3px white;
+	z-index: 2;
 } 
 #top{
 	font: 50px Arial;
@@ -16,105 +19,114 @@ a:link{
 }
 
 .Logo{
-	position: relative;
-	 width: 700px;
-	 height: 500px;
-	 top:55%;
-	 left: 50%;
-	 margin-top: 10%;
-	 margin-left: -400px;
-	 text-align: center;
+	position: absolute;
+	 width: 1200px;
+	 height: 800px;
+	 top: 20%;
+	 right: 23%;
+	 z-index: 0;
 }
 
 #HomeButton{
-	border: 4px solid white;
+	border: 4px solid black;
 	padding: 7px;
-	border-radius: 4px;
+	border-radius: 20px;
 	position: absolute; /*Used absolute cause it is like relative but is  doesnt affect neighbors and isnt affected by neighbors */
-	top: 20%;
-	left: 54%;
+	top: 5%;
+	left: 65%;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
-
+	color: black;
 }
 #HomeButton:hover{
-	background-color: #ff1a1a;
+	background-color: #2aa22a;
 	color: white;
 }
 #ResumeButton{
-	border: 4px solid white;
+	border: 4px solid black;
 	padding: 7px;
-	border-radius: 4px;
+	border-radius: 20px;
 	position: absolute;
-	top: 50%;
-	left: 54%;
-	margin-top: -150px;
-	margin-left: -400px;
+	top: 5%;
+	left: 25%;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
+	color: black;
 }
 #ResumeButton:hover{
-	background-color: #ff1a1a;
+	background-color:  #2aa22a;
 	color:white;
 }
 #AboutMeButton{
-	border: 4px solid white;
+	z-index: 3;
+	border: 4px solid black;
 	padding: 7px;
-	border-radius: 4px;
+	border-radius: 20px;
 	position: absolute;
-	top: 50%;
-	left: 54%;
-	margin-top: -150px;
-	margin-left: 320px;
+	top: 5%;
+	left: 75%;
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
+	color: black;
+	
 }
 #AboutMeButton:hover{
-	background-color: #ff1a1a;
+	background-color:  #2aa22a;
 	color:white;
 }
+
 #TutorialsButton{
-	border: 4px solid white;
+	border: 4px solid black;
 	padding: 7px;
-	border-radius: 4px;
+	border-radius: 20px;
 	position: absolute;
-	top: 50%;
-	left: 54%;
-	margin-top: -150px;
-	margin-left: -470px;
+	top: 5%;
+	left: 12%;	
 	-webkit-transition-duration: 0.4s;
 	font-family: Impact;
 	font-size: 50px;
+	color: black;
 }
 #TutorialsButton:hover{
-	background-color: #ff1a1a;
+	background-color:  #2aa22a;
 	color:white;
 }
 body{
-	background-image: url("bg.jpg");
-   background-size: 100%; 
-   background-repeat: no-repeat; 
-   background-position: center;
-   background-attachment: fixed;       
-   webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   html{height:100%, width 100%};
+	background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;	
+    background-repeat: no-repeat;
 }
+
 
 
 div.sidebar{
 	position:absolute;
-	top:50%;
-	left:30%;
-	height: 10%;
-	width: 10%;
+	top:130%;
+	left:0%;
+	height: 60%;
+	width: 100%;
 	padding: 10px;
 	background-color: white;
-	opacity: 0.6;
+	opacity: .2;
 	filter: alpha(opacity=60);
+}
+#TitleA{
+	font-family: Impact;
+	font-size: 50px;
+	position: absolute;
+	top: 130%;
+	right: 46%;
+}
+.Upbar{
+	position:absolute;
+	top: 1%;
+	height:18%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.4;
 }
